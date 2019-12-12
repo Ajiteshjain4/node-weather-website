@@ -1,4 +1,4 @@
-console.log('This is client side JS file')
+//console.log('This is client side JS file')
 
 
 const weatherForm= document.querySelector('form')
