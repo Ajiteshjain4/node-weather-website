@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Weather App Home</title>
+    <link rel="icon" href="./images/WeatherPic.jpg">
+    <link rel="stylesheet" href="./css/styles.css">
+    <body>
+        <div class="main_content">
+            {{>header}}
+            <h3>Please enter the city name below</h3>
+            <form>
+                <input placeholder="Location">
+                <button>Search</button>
+            </form>
+            <p id="message1"></p>
+            <p id="message2"></p>
+            <p id="message3"></p>
+            <p id="message4"></p>
+            <p id="message5"></p>
+            <p id="message6"></p>
+            <p id="message7"></p>
+        </div>
+        {{>footer}}
+            <script src="./js/clientSideFile.js"></script>
+    </body>
+</head>
+
+</html>
