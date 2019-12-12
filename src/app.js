@@ -43,7 +43,7 @@ app.get('/help',(req,res) => {
     res.render('help',{
         title: 'Help page of Weather App',
         name: 'Ajitesh Jain',
-        phone: 9044336989
+        phone: 9999999999
     })
 })
 
