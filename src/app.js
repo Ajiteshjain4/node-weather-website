@@ -29,21 +29,21 @@ app.use(express.static(publicDirPath))
 
 app.get('',(req,res) => {
     res.render('index',{
-        title: 'Weather App',
+        title: 'AJAN Weather App',
         name: 'Ajitesh Jain'
     })
 })
 
 app.get('/about',(req,res) => {
     res.render('about',{
-        title: 'About Weather App',
+        title: 'About AJAN Weather App',
         name: 'Ajitesh Jain'
     })
 })
 
 app.get('/help',(req,res) => {
     res.render('help',{
-        title: 'Help page of Weather App',
+        title: 'Help page of AJAN Weather App',
         name: 'Ajitesh Jain',
         phone: 9999999999
     })
@@ -80,6 +80,8 @@ app.get('/weather',(req,res)=> {
                                 latitude: data1.latitude,
                                 longitude: data1.longitude,
                                 Temperature: data2.Temperature,
+                                TemperatureHigh:data2.TemperatureHigh,
+                                TemperatureLow:data2.TemperatureLow,
                                 Precipitation_Probability: data2.Precipitation_Probability,
                                 Day_Summary: data2.Day_Summary,
                                 General_Summary: data2.General_Summary
