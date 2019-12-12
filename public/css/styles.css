@@ -62,3 +62,9 @@ button{
     border: #888888;
     background: #888888;
 }
+
+p{
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+}
