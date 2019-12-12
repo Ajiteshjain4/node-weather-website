@@ -9,6 +9,8 @@ const forecast=require('./utils/Forecast')
 // console.log(path.join(__dirname,'../public'))
 
 const app= express()
+//As Heroku assigns port hence making below change, also will work on localhost
+const port=process.env.PORT || 3000
 
 const publicDirPath= path.join(__dirname,'../public')
 
@@ -109,8 +111,8 @@ app.get('*',(req,res)=>{
     })
 })
 
-app.listen(3000,()=>{
-    console.log('Server is running on port 3000.')
+app.listen(port,()=>{
+    console.log('Server is running on port ' + port)
 })
 
 
